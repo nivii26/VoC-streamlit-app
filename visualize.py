@@ -75,7 +75,7 @@ def generate_sentiment_frequency(df):
 
     count_by_topic = df.groupby(['Main Topic'])['Main Topic'].count()
     count_by_topic = count_by_topic.to_frame()
-    c2.beta_set_page_config( layout='wide')
+ 
     c2.write(count_by_topic)
     plt.figure(figsize=(8,8), facecolor=None)
     count_by_topic.plot(kind='barh', rot = 0, color = col)
