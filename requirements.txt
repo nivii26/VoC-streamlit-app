@@ -1,3 +1,7 @@
 streamlit==1.0.0
 Circlify==0.15.0
 wordcloud==1.8.2.2
+numpy==1.23.5
+matplotlib==3.6.3
+matplotlib-inline==0.1.6
+
