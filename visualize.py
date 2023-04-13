@@ -287,6 +287,6 @@ def main(file_path):
 
 if __name__ == '__main__':
     # Define and parse command-line arguments
-    file_path = 'final_lsa.py'
+    file_path = 'final_lsa.csv'
     # Call the main function with the file path argument
     main(file_path)
