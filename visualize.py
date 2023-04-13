@@ -10,7 +10,6 @@ import re
 import numpy as np
 from datetime import date
 import circlify
-import argparse
 
 def generate_wordplot(df):
 
@@ -288,9 +287,6 @@ def main(file_path):
 
 if __name__ == '__main__':
     # Define and parse command-line arguments
-    parser = argparse.ArgumentParser(description="Process a CSV file for analysis.")
-    parser.add_argument("file_path", type=str, help="Path to CSV file.")
-    args = parser.parse_args()
-
+    file_path = 'final_lsa.py'
     # Call the main function with the file path argument
-    main(args.file_path)
+    main(file_path)
