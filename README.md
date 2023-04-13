@@ -15,5 +15,13 @@ Method 2:
 
 Clone this repository with the following command:
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/nivii26/VoC-streamlit-app.git
 ```
+
+Set local working directory to 'VoC-streamlit-app'
+
+To generate dashboard using localhost, run the following command on your terminal - 
+```
+run streamlit visualise.py 
+```
+
