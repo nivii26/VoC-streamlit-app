@@ -42,8 +42,8 @@ To generate dashboard using localhost, run the following command on your termina
 run streamlit visualize.py 
 ```
 
-<img width="749" alt="image" src="https://user-images.githubusercontent.com/79890811/231934552-6975338a-a297-4048-9a44-ed72c8f4da01.png">
-<img width="763" alt="image" src="https://user-images.githubusercontent.com/79890811/231934687-ea0f4e9b-885f-4ac4-9f0e-3b7889aa9897.png">
+![Alt text] <img width="749" alt="image" src="https://user-images.githubusercontent.com/79890811/231934552-6975338a-a297-4048-9a44-ed72c8f4da01.png">
+![Alt text] <img width="763" alt="image" src="https://user-images.githubusercontent.com/79890811/231934687-ea0f4e9b-885f-4ac4-9f0e-3b7889aa9897.png">
 
 
 
