@@ -1,7 +1,14 @@
 # VoC-streamlit-app
 This repository is to host a streamlit app for Voice of Customer Analysis
 
-### Set-up
+There are two ways to use this repository - 
+
+### Method 1: Access Deployed Dashboard
+
+Refresh ['this link'](https://share.streamlit.io/app/nivii26-voc-streamlit-app-visualize-9xla2m/) for an updated dashboard.
+
+### Method 2: LocalHost
+#### Set-up
 Create a virtual environment
 ```
 virtualenv streamlit_venv
@@ -22,13 +29,6 @@ Clone this repository
 $ git clone https://github.com/nivii26/VoC-streamlit-app.git
 ```
 
-There are two ways to use this repository - 
-
-### Method 1: Access Deployed Dashboard
-
-Refresh ['this link'](https://share.streamlit.io/app/nivii26-voc-streamlit-app-visualize-9xla2m/) for an updated dashboard.
-
-### Method 2: LocalHost
 Ensure local working directory is 'VoC-streamlit-app'
 
 Replace the 'final_lsa.csv' in the repository with the desired file to generate the dashboard. 
