@@ -9,7 +9,6 @@ from wordcloud import WordCloud
 import re
 import numpy as np
 from datetime import date
-import seaborn as sns
 import circlify
 import argparse
 
