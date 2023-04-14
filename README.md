@@ -42,12 +42,12 @@ To generate dashboard using localhost, run the following command on your termina
 run streamlit visualize.py 
 ```
 ### Dashboard Demo
-![Alt text] <img width="749" alt="image" src="https://user-images.githubusercontent.com/79890811/231934552-6975338a-a297-4048-9a44-ed72c8f4da01.png">
-![Alt text] <img width="763" alt="image" src="https://user-images.githubusercontent.com/79890811/231934687-ea0f4e9b-885f-4ac4-9f0e-3b7889aa9897.png">
-![Alt text] <img width="649" alt="image" src="https://user-images.githubusercontent.com/79890811/231935482-e7d4be8d-4156-4c99-9264-79b49e6e4352.png">
-![Alt text] <img width="675" alt="image" src="https://user-images.githubusercontent.com/79890811/231935546-920ef945-d71d-4e51-9b2e-9e4ac0b4d44c.png">
-![Alt text] <img width="682" alt="image" src="https://user-images.githubusercontent.com/79890811/231935739-04c8315e-dcf8-4dfa-9034-85940e281404.png">
-![Alt text]<img width="691" alt="image" src="https://user-images.githubusercontent.com/79890811/231935904-ea9a76a1-3516-4801-af6f-934504d92b00.png">
+![] <img width="749" alt="image" src="https://user-images.githubusercontent.com/79890811/231934552-6975338a-a297-4048-9a44-ed72c8f4da01.png">
+![] <img width="763" alt="image" src="https://user-images.githubusercontent.com/79890811/231934687-ea0f4e9b-885f-4ac4-9f0e-3b7889aa9897.png">
+![] <img width="649" alt="image" src="https://user-images.githubusercontent.com/79890811/231935482-e7d4be8d-4156-4c99-9264-79b49e6e4352.png">
+![] <img width="675" alt="image" src="https://user-images.githubusercontent.com/79890811/231935546-920ef945-d71d-4e51-9b2e-9e4ac0b4d44c.png">
+![] <img width="682" alt="image" src="https://user-images.githubusercontent.com/79890811/231935739-04c8315e-dcf8-4dfa-9034-85940e281404.png">
+![]<img width="691" alt="image" src="https://user-images.githubusercontent.com/79890811/231935904-ea9a76a1-3516-4801-af6f-934504d92b00.png">
 
 
 
