@@ -1,7 +1,7 @@
 # Change in topics over time 
 # Change in sentiments over time
 
-# FINAL_OUTPUT_DF = ["TIME", "TEXT", "SENTIMENT", 'SENT_PROB', "TOPIC"] 'Tokenised Text'
+# FINAL_OUTPUT_DF = ["TIME", "TEXT", "SENTIMENT", "TOPIC"]
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -9,7 +9,9 @@ from wordcloud import WordCloud
 import re
 import numpy as np
 from datetime import date
+import seaborn as sns
 import circlify
+import argparse
 
 def generate_wordplot(df):
 
@@ -75,7 +77,7 @@ def generate_sentiment_frequency(df):
 
     count_by_topic = df.groupby(['Main Topic'])['Main Topic'].count()
     count_by_topic = count_by_topic.to_frame()
- 
+    
     c2.write(count_by_topic)
     plt.figure(figsize=(8,8), facecolor=None)
     count_by_topic.plot(kind='barh', rot = 0, color = col)
@@ -92,6 +94,7 @@ def sentiment_distribution(df):
     # Convert datatype to datetime
     df['Time'] = pd.to_datetime(df['Time'], dayfirst = 'True')
     df['year'] = pd.DatetimeIndex(df['Time']).year
+    df['month'] = pd.DatetimeIndex(df['Time']).month
 
     year_range = df['year'].unique()
     item = 'ALL'
@@ -121,6 +124,36 @@ def sentiment_distribution(df):
     fig.tight_layout()
     plt.show()
     c3.pyplot()
+
+    sentiment_over_time(df)
+
+def sentiment_over_time(data):
+    c6 = st.container()
+
+    sents = data['Sentiment'].unique().tolist()
+
+    monthly_topic_count = data.groupby(['month', 'Sentiment']).size().reset_index(name='count')
+    
+    plt.figure(figsize=(8,4), facecolor=None)
+
+    for s in sents:
+        if s == 'positive':
+            c = '#77DD77'
+        else:
+            c = '#FF0000'
+        topic_data = monthly_topic_count[monthly_topic_count['Sentiment'] == s]
+        plt.plot(topic_data['month'], topic_data['count'], label = s, color = c)
+    # Add axis labels and title
+    plt.xlabel('Month')
+    plt.ylabel('Number of Reviews')
+    plt.title('Monthly Trend')
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    plt.xticks(range(1, 13), months, rotation = 45)
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.3), ncol=2)
+    # Show the plot
+    plt.show()
+    c6.pyplot()
+
 
 def generate_wordplot_per_sentiment(df):
 
@@ -186,7 +219,7 @@ def topics_over_time(df):
     fil_df = df[df['year'].isin(sel_year)]  # filter
     df = fil_df
     
-   # Group the data by month and Main Topic and count the number of rows in each group
+    # Group the data by month and Main Topic and count the number of rows in each group
     monthly_topic_count = df.groupby(['month', 'Main Topic']).size().reset_index(name='count')
 
     # Get a list of the unique Main Topics
@@ -287,6 +320,9 @@ def main(file_path):
 
 if __name__ == '__main__':
     # Define and parse command-line arguments
-    file_path = 'visualization_data.csv'
+    parser = argparse.ArgumentParser(description="Process a CSV file for analysis.")
+    parser.add_argument("file_path", type=str, help="Path to CSV file.")
+    args = parser.parse_args()
+
     # Call the main function with the file path argument
-    main(file_path)
+    main(args.file_path)
