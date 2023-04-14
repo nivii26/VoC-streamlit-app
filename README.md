@@ -43,6 +43,7 @@ run streamlit visualize.py
 ```
 # Dashboard Demo
  <img width="749" alt="image" src="https://user-images.githubusercontent.com/79890811/231934552-6975338a-a297-4048-9a44-ed72c8f4da01.png">
+ <img width="775" alt="image" src="https://user-images.githubusercontent.com/79890811/232048871-f1f162ce-25b2-49fb-a0d0-65b24a94ec8c.png">
  <img width="763" alt="image" src="https://user-images.githubusercontent.com/79890811/231934687-ea0f4e9b-885f-4ac4-9f0e-3b7889aa9897.png">
  <img width="649" alt="image" src="https://user-images.githubusercontent.com/79890811/231935482-e7d4be8d-4156-4c99-9264-79b49e6e4352.png">
  <img width="675" alt="image" src="https://user-images.githubusercontent.com/79890811/231935546-920ef945-d71d-4e51-9b2e-9e4ac0b4d44c.png">
